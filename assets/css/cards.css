@@ -9,15 +9,19 @@ html {
 .icon {color: #BCD2DA;}
 
 .card {
-    /* display, flex-direction */
+    display: flex;
+     flex-direction: column;
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
 }
 
 .card__description {
-    /* display, flex-direction, align-items */
+    display: flex;
+     flex-direction: column;
+      align-items: center;
     padding: 15px 0;
+    flex-grow: 1;
 }
 
 .card__descriptionIcon {font-size: 32px; margin-bottom: 10px;}
@@ -40,14 +44,15 @@ html {
 }
 
 .cardGroup {
-    /* display */
+    display: flex;
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
   }
   
     .cardGroup__card {
-      /* flex-grow, flex-basis */
+     flex-grow: 1; 
+      flex-basis: 33%; 
       border: none;
       border-radius: 0;
     }
